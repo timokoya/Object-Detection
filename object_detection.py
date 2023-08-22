@@ -12,8 +12,7 @@ pretrained_model = keras_cv.models.RetinaNet.from_preset(
     "retinanet_resnet50_pascalvoc", bounding_box_format="xywh"
 )
 
-#filepath = tf.keras.utils.get_file(origin="https://i.imgur.com/gCNcJJI.jpg")
-filepath = '/home/timi/Desktop/wavyfish.jpeg'
+filepath = tf.keras.utils.get_file(origin="https://i.imgur.com/gCNcJJI.jpg")
 image = keras.utils.load_img(filepath)
 image = np.array(image)
 
